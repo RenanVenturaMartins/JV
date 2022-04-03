@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>teste de formulario</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>Horta do Jorgin</h1>
+        <div class="pesquisa">
+                <input type="search" name="pesquisa" id="pesquisa">
+                <label for="pesquisa">Pesquisa</label> 
+        </div>
+        <nav id="area">
+            <p>Menu</p>
+        </nav>
+    </header>
+    <div class="box">
+        <form action="">
+            <fieldset>
+                <legend>Formulario do cliente</legend>
+                <div class="inputbox">
+                    <input type="text" name="nome" id="nome" class="inputuser" required>
+                    <label for="nome">Nome Completo</label>
+                </div>
+                <div class="inputbox">
+                    <input type="email" name="email" id="email" class="inputuser" required>
+                    <label for="email"> Email</label>
+                </div>
+                <div class="inputbox">
+                    <input type="tel" name="telefone" id="telefone" class="inputuser" required>
+                    <label for="telefone"> telefone</label>
+                </div>
+                <p>Sexo</p>
+                <input type="radio" id="femnino" name="genero" value="feminino" required >
+                <label for="feminino">Feminino</label>
+                <br>
+                <input type="radio" id="masculino" name="genero" value="masculino" required >
+                <label for="masculino">Masculino</label>
+                <br>
+                <input type="radio" id="outros" name="genero" value="outros" required >
+                <label for="outros">Outros</label>
+                <br>
+                <div class="inputbox">
+                    <label for="data">Data de Nascimento:</label>
+                    <input type="date" name="data de nascimento" id="data" class="inputuser" required>
+                </div>
+                <div class="inputbox">
+                    <input type="text" name="cidade" id="cidade" class="inputuser" required>
+                    <label for="cidade">Cidade</label>
+                </div>
+                <div class="inputbox">
+                    <input type="text" name="estado" id="estado" class="inputuser" required>
+                    <label for="estado"> Estado</label>
+                </div>
+                <div class="inputbox">
+                    <input type="text" name="endereco" id="endereco" class="inputuser" required>
+                    <label for="endereco"> Endereço</label>
+                </div>
+                <input type="submit" name="submit" id="submit">
+                
+            </fieldset>
+        </form>
+
+    </div>
+    <script>
+         var area = window.document.getElementById('area')
+         area.addEventListener ('click' , clicar)
+
+         function clicar(){
+             area.innerText ="clicou"
+
+         }
+
+    </script>
+</body>
+</html>
