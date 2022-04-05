@@ -9,25 +9,38 @@
    <title>Estrangeiro ou não</title>
 </head>
 <body>
-   <legend>Qual o seu Pais?</legend>
-   <h1>qual é seu pais</h1>
-   Br ou Outos ?<input type="text" name="txtvel" id="txtvel"> 
-   <input type="button" value="Verificar" onclick="calcular()">
-   <div id="res">
-       
-   </div>
+    <div class="box">
+      <form>
+        <legend>Pesquisa rapida</legend>
+          <p>Qual o seu pais</p>
+         <select>
+          <option value="">Selecione</option>
+          <option value="Brasil">Brasil</option>
+          <option value="Japão">Japão</option>
+          <option value="Itália">Itália</option>
+          <option value="Coréia">Coréia</option>
+        </select>
+        <input type="button" value="Enviar" onclick="Enviar()">
+      </form>
+    </div>
+    <div >
+      <p id="res"></p>
+
+    </div>
    <script>
-       function calcular(){
-         var txtv= window.document.querySelector('input#txtvel')
-          var res = window.document.querySelector ('div#res')
-          res.innerHTML = `você  ${txtv} KM/h` 
-          if (calculo =  Br) {
-              res.innerHTML += `<P>Desça do veiculo </p>`
+       function Enviar(){
+          var nacionalidade = window.document.querySelector('select').value;
+          var res = window.document.querySelector ('p#res')
+          res.innerHTML = `você  é da(o),  ${nacionalidade} ` 
+          if (nacionalidade == "Brasil") {
+              res.innerHTML+= `<p>Você Não é Estrangeiro </p>`
             }
           else {
-              res.innerHTML += `<p>Continue assim</p>`
+              res.innerHTML += `<p>Você é Estrangeiro</p>`
           }
        }
+    </script>
+       
   
 
    
