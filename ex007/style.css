@@ -2,11 +2,11 @@
 
 body{
     font-family: Arial, Helvetica, sans-serif;
-   
   
 }
-*{
+*, html{
     margin: 0px;
+    padding: 0px;
 }
 header{
     text-align: center;
@@ -15,6 +15,7 @@ header{
 }
 #inicio{
     display: flexbox;
+    height: 15px;
     
 }
 #logo{
@@ -32,6 +33,11 @@ header{
 }
 #container{
     overflow-x: auto;
+    padding: 10px;
+    height: 50px;
+    margin: 0px;
+    background-image:linear-gradient(to bottom, rgba(0, 0, 0, 0.164), white);
+   
 }
 
 .pesquisa{
@@ -39,35 +45,28 @@ header{
     padding: 0px 30px;
     margin: 0px 15px;
     display: inline-block;
-    border: 1px solid orange;
-    border-radius: 15px;
     font-size: 1.2em;
+    
     
     
 }
 a{
     text-decoration: none;
-    color: black;
+    color: rgb(56, 37, 37);
+    transition: 1s;
 }
 
 #principal{
-    background-image: url(imagens/wallpaper002.jpg);
+    background-image: url(imagens/images.jpg);
     background-repeat: no-repeat;
     background-size: cover;
-    height: 350px;
-    position: relative;
+    height: 500px;
+    width: auto;
     padding: 0px;
 }
 
 #principal > p , h1{
-    position: absolute;
-    background-color: white;
-    height: 150px;
-    width: 800px;
-    
-
-    top: 20%;
-    left: 20%;
+ 
 
 }
 details{
