@@ -1,15 +1,11 @@
 @charset "UTF-8";
 
-:root{
-    
-}
 body{
-
     font-family: Arial, Helvetica, sans-serif;
-    background-image:linear-gradient(to right,blue , rgba(0, 0, 255, 0.479));
+   
+  
 }
-* {
-    padding: 0px;
+*{
     margin: 0px;
 }
 header{
@@ -17,16 +13,76 @@ header{
     background-color: white;
     padding-bottom: 50px;
 }
-
-.pesquisa{  
-    left: 42%;
-    width: 100%;
-
+#inicio{
+    display: flexbox;
+    
+}
+#logo{
+    width: 65px;
+    right: 30%;
+    float: left;
+} 
+#blog{
+    width: 30px;
+    right: auto;
+    float: right;
+}
+#blogp{
+    text-align: right;
+}
+#container{
+    overflow-x: auto;
 }
 
-nav{
-    text-align: right;
-    font-size: large;
+.pesquisa{
+    text-align: center;
+    padding: 0px 30px;
+    margin: 0px 15px;
+    display: inline-block;
+    border: 1px solid orange;
+    border-radius: 15px;
+    font-size: 1.2em;
+    
+    
+}
+a{
+    text-decoration: none;
+    color: black;
+}
+
+#principal{
+    background-image: url(imagens/wallpaper002.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 350px;
+    position: relative;
+    padding: 0px;
+}
+
+#principal > p , h1{
+    position: absolute;
+    background-color: white;
+    height: 150px;
+    width: 800px;
+    
+
+    top: 20%;
+    left: 20%;
+
+}
+details{
+    text-align: left;
+}
+#area{
+    text-align: left;
+    border: 1px solid black;
+    text-decoration: none;
+}
+
+div#menu{
+    background-color: rgba(0, 0, 0, 0.342);
+    width: 120px;
+    border: 1px solid black;
 }
 
 div.box{
@@ -40,6 +96,15 @@ div.box{
     border-radius: 10px;
     width: 20%;
    
+}
+
+div.box > form{
+    display: none;
+}
+
+div.box:hover > form {
+    display: block;
+
 }
 
 fieldset{
