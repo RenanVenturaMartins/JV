@@ -1,6 +1,8 @@
 @charset "UTF-8";
 
 body{
+    padding: 0px;
+    margin: 0px;
     font-family: Arial, Helvetica, sans-serif;
   
 }
@@ -32,7 +34,7 @@ header{
     text-align: right;
 }
 #container{
-    overflow-x: auto;
+
     padding: 10px;
     height: 50px;
     margin: 0px;
@@ -42,95 +44,39 @@ header{
 
 .pesquisa{
     text-align: center;
-    padding: 0px 30px;
-    margin: 0px 15px;
+    padding:initial 15px;
+    margin: 5px 10px;
     display: inline-block;
-    font-size: 1.2em;
-    
-    
-    
+    font-size: 1.2em;  
+    border: 1px solid rgba(238, 130, 238, 0.767); 
+    border-radius: 15px;
 }
+
 a{
     text-decoration: none;
     color: rgb(56, 37, 37);
     transition: 1s;
 }
 
-#principal{
+#fundo{
     background-image: url(imagens/images.jpg);
     background-repeat: no-repeat;
     background-size: cover;
-    height: 500px;
-    width: auto;
-    padding: 0px;
+    min-height: 300px;
+    background-position:bottom center;
+   
 }
-
-#principal > p , h1{
- 
-
-}
-details{
-    text-align: left;
-}
-#area{
-    text-align: left;
-    border: 1px solid black;
-    text-decoration: none;
-}
-
-div#menu{
-    background-color: rgba(0, 0, 0, 0.342);
-    width: 120px;
-    border: 1px solid black;
-}
-
-div.box{
-    color: white;
+#principal{
     position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    background-color: rgba(0, 0, 0, 0.8);
-    padding: 15px;
-    border-radius: 10px;
-    width: 20%;
-   
-}
-
-div.box > form{
-    display: none;
-}
-
-div.box:hover > form {
-    display: block;
-
-}
-
-fieldset{
-    border: 2px solid dodgerblue;
-   
-}
-
-legend{
-    border-radius: 5px;
+    background-color: white;
     text-align: center;
-    padding: 8px;
-    border: 2px solid dodgerblue;
-    background-color: dodgerblue;
+    padding: 10px 50px;
+    height: 120px;
 
-}
 
-.inputbox{
-    padding-bottom: 10px;
-    position: relative;
-}
 
-.inputuser{
-    background: none;
-    border: none;
-    border-bottom: 1px solid white;
-    outline: none;
-    color: white;
-    width: 100%;
+    top: 30%;
+    left: 30%;
+    transform: translate(-50% -30%);
 }
 

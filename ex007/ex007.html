@@ -25,32 +25,44 @@
        
     </header>
     <div id="container">
-        <nav class="pesquisa">
+        <nav class="pesquisa" onmouseenter="entre()">
             <a href="">Promos 2022</a>
         </nav>
-        <nav class="pesquisa">
+        <nav class="pesquisa"onmouseenter="entre()" >
             <a href="">Hoteis</a>
         </nav>
-        <nav  class="pesquisa">
+        <nav  class="pesquisa"onmouseenter="entre()">
             <a href="">Voos</a>
         </nav>
-        <nav class="pesquisa"> 
+        <nav class="pesquisa"onmouseenter="entre()"> 
             <a href="">Pacotes</a>
         </nav>
-        <nav class="pesquisa">
+        <nav class="pesquisa"onmouseenter="entre()">
             <a href="">Top ofertas</a>
         </nav >
-        <nav class="pesquisa">
+        <nav class="pesquisa"onmouseenter="entre()">
             <a href="">Alugel de carros</a>
         </nav>
-        <nav class="pesquisa">
+        <nav class="pesquisa"onmouseenter="entre()">
              <a href="">Seguro Viagem</a>
         </nav>
-        <div id="principal">
-         <h1>Passagens aéreas</h1>
-         <p>Idas e Voltas</p>
+        <div id="fundo">
+            <div id="principal">
+                <h1>Passagens aéreas</h1>
+                <p>Idas e Voltas</p>
+                <p></p>
+            </div>
+         
     </div>
     
+<script>
+    var principal1 = window.document.getElementById('#principal')
+    principal1.addEventListener ('mouseenter' , entre)
 
+    function entre(){
+        principal1.style.backgroundColor = 'orange' 
+        principal1.style.color= 'white' 
+    }
+</script>
 </body>
 </html>
