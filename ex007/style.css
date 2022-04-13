@@ -44,22 +44,21 @@ header{
 
 .pesquisa{
     text-align: center;
-    padding:initial 15px;
+    padding:15px;
     margin: 5px 10px;
     display: inline-block;
     font-size: 1.2em;  
-    border: 1px solid rgba(238, 130, 238, 0.767); 
-    border-radius: 15px;
 }
 
 a{
-    text-decoration: none;
+    text-decoration: underline 2px ;
     color: rgb(56, 37, 37);
-    transition: 1s;
+    transition:0.2s;
 }
 
 #fundo{
-    background-image: url(imagens/images.jpg);
+    position: relative;
+    background-image: url(imagens/wallpaper002.jpg);
     background-repeat: no-repeat;
     background-size: cover;
     min-height: 300px;
@@ -72,6 +71,7 @@ a{
     text-align: center;
     padding: 10px 50px;
     height: 120px;
+    border-radius: 15px;
 
 
 

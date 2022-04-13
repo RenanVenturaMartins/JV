@@ -51,17 +51,16 @@
                 <h1>Passagens aéreas</h1>
                 <p>Idas e Voltas</p>
                 <p></p>
-            </div>
-         
+            </div> 
     </div>
     
 <script>
-    var principal1 = window.document.getElementById('#principal')
-    principal1.addEventListener ('mouseenter' , entre)
+    var pesquisa = window.document.querySelector('.pesquisa')
+    pesquisa.addEventListener ('clik' , clicou)
 
-    function entre(){
-        principal1.style.backgroundColor = 'orange' 
-        principal1.style.color= 'white' 
+    function clicou() {
+        pesquisa.style.color = 'orange' 
+        pesquisa.style.background = 'black'
     }
 </script>
 </body>
