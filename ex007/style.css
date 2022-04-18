@@ -42,7 +42,9 @@ header{
    
 }
 
-.pesquisa{
+.fundopes{
+    border-radius: 30px 10px;
+    background-color: white;
     text-align: center;
     padding:15px;
     margin: 5px 10px;
@@ -51,7 +53,7 @@ header{
 }
 
 a{
-    text-decoration: underline 2px ;
+    text-decoration: none ;
     color: rgb(56, 37, 37);
     transition:0.2s;
 }
@@ -76,7 +78,20 @@ a{
 
 
     top: 30%;
-    left: 30%;
+    left: 20%;
     transform: translate(-50% -30%);
 }
+
+#fundo123{
+    position: relative
+    
+}
+ 
+#milha123{
+    position: absolute ;
+    top:20px ;
+    left: 20px;
+    background-size: contain;
+}
+
 

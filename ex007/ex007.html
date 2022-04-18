@@ -11,7 +11,7 @@
     <header>
         <div id="inicio">
             <img  id="logo" src="imagens/55fe4204feea199f1ed891f755a478bb.jpg" alt="">
-           <p id="blogp"> <img   id="blog" src="imagens/download.png" alt=""> Blog</p>
+           <p id="blogp"> <img   id="blog" src="imagens/download.png" alt=""> <a href="">Blog</a> </p>
         </div>
        
        <!-- <div id="menu">
@@ -24,27 +24,27 @@
         </div> --> 
        
     </header>
-    <div id="container">
-        <nav class="pesquisa" onmouseenter="entre()">
-            <a href="">Promos 2022</a>
+    <div id="container-menu">
+        <nav class="fundopes" id="bg-nav" onmouseover="sobre(this)" onmouseout="fora(this)">
+            <a class="pesquisa"href="">Promos 2022</a>
         </nav>
-        <nav class="pesquisa"onmouseenter="entre()" >
-            <a href="">Hoteis</a>
+        <nav class="fundopes" id="bg-nav" onmouseover="sobre(this)" onmouseout="fora(this)"  >
+            <a class="pesquisa" href="">Hoteis</a>
         </nav>
-        <nav  class="pesquisa"onmouseenter="entre()">
-            <a href="">Voos</a>
+        <nav class="fundopes" id="bg-nav" onmouseover="sobre(this)" onmouseout="fora(this)"  >
+            <a hclass="pesquisa" ref="">Voos</a>
         </nav>
-        <nav class="pesquisa"onmouseenter="entre()"> 
-            <a href="">Pacotes</a>
+        <nav class="fundopes" id="bg-nav" onmouseover="sobre(this)" onmouseout="fora(this)" > 
+            <a class="pesquisa" onmouseenter="clicou()" href="">Pacotes</a>
         </nav>
-        <nav class="pesquisa"onmouseenter="entre()">
-            <a href="">Top ofertas</a>
+        <nav class="fundopes" id="bg-nav" onmouseover="sobre(this)" onmouseout="fora(this)" >
+            <a class="pesquisa" href="">Top ofertas</a>
         </nav >
-        <nav class="pesquisa"onmouseenter="entre()">
-            <a href="">Alugel de carros</a>
+        <nav  class="fundopes" id="bg-nav" onmouseover="sobre(this)" onmouseout="fora(this)" >
+            <a class="pesquisa" onmouseenter="clicou()" href="">Alugel de carros</a>
         </nav>
-        <nav class="pesquisa"onmouseenter="entre()">
-             <a href="">Seguro Viagem</a>
+        <nav class="fundopes" id="bg-nav" onmouseover="sobre(this)" onmouseout="fora(this)" >
+             <a class="pesquisa" href="">Seguro Viagem</a>
         </nav>
         <div id="fundo">
             <div id="principal">
@@ -53,14 +53,29 @@
                 <p></p>
             </div> 
     </div>
+    <div id="fundo123">
+        <a  id="milha123" href=""><img src="imagens/WhatsApp Image 2022-04-18 at 11.45.55.jpeg" alt=""></a>
+    </div>
+
+   
     
 <script>
-    var pesquisa = window.document.querySelector('.pesquisa')
-    pesquisa.addEventListener ('clik' , clicou)
+    //var pesquisa = window.document.querySelectorAll('.pesquisa')
+    //pesquisa.addEventListener ('clik' , clicou);
 
-    function clicou() {
-        pesquisa.style.color = 'orange' 
-        pesquisa.style.background = 'black'
+    
+
+    function sobre(){
+        var bg = document.getElementById('bg-nav');
+
+        bg.style.backgroundColor = "orange";
+    }
+
+    function fora(){
+        var bg = document.getElementById('bg-nav');
+
+        bg.style.backgroundColor = "white";
+
     }
 </script>
 </body>

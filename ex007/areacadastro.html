@@ -18,7 +18,7 @@
     }
 
     div#menu{
-        background-color: rgba(0, 0, 0, 0.342);
+        background-color: white);
         width: 120px;
         border: 1px solid black;
     }
@@ -30,30 +30,23 @@
         left: 50%;
         transform: translate(-50%, -50%);
         background-color: rgba(0, 0, 0, 0.8);
-        padding: 15px;
+        padding: 30px;
         border-radius: 10px;
         width: 20%;
     
     }
 
-    div.box > form{
-        display: none;
-    }
-
-    div.box:hover > form {
-        display: block;
-
-    }
-
+    
+   
     fieldset{
         border: 2px solid dodgerblue;
     
     }
 
-    legend{
+    h2{
         border-radius: 5px;
         text-align: center;
-        padding: 8px;
+        padding: 2px;
         border: 2px solid dodgerblue;
         background-color: dodgerblue;
 
@@ -81,46 +74,52 @@
     <div class="box">
         <form action="">
             <fieldset>
-                <legend>Formulario do cliente</legend>
+                
+                <h2>Formulario</h2>
+                <br> <br> 
                 <div class="inputbox">
                     <input type="text" name="nome" id="nome" class="inputuser" required>
                     <label for="nome">Nome Completo</label>
                 </div>
+                <br> <br>
                 <div class="inputbox">
                     <input type="email" name="email" id="email" class="inputuser" required>
-                    <label for="email"> Email</label>
+                    <label for="email"> Email ou Instagram</label>
                 </div>
+                <br> <br>
                 <div class="inputbox">
                     <input type="tel" name="telefone" id="telefone" class="inputuser" required>
                     <label for="telefone"> telefone</label>
-                </div>
-                <p>Sexo</p>
-                <input type="radio" id="femnino" name="genero" value="feminino" required >
-                <label for="feminino">Feminino</label>
-                <br>
-                <input type="radio" id="masculino" name="genero" value="masculino" required >
-                <label for="masculino">Masculino</label>
-                <br>
-                <input type="radio" id="outros" name="genero" value="outros" required >
-                <label for="outros">Outros</label>
-                <br>
-                <div class="inputbox">
-                    <label for="data">Data de Nascimento:</label>
-                    <input type="date" name="data de nascimento" id="data" class="inputuser" required>
-                </div>
-                <div class="inputbox">
-                    <input type="text" name="cidade" id="cidade" class="inputuser" required>
-                    <label for="cidade">Cidade</label>
-                </div>
-                <div class="inputbox">
-                    <input type="text" name="estado" id="estado" class="inputuser" required>
-                    <label for="estado"> Estado</label>
                 </div>
                 <div class="inputbox">
                     <input type="text" name="endereco" id="endereco" class="inputuser" required>
                     <label for="endereco"> Endereço</label>
                 </div>
-                <input type="submit" name="submit" id="submit">
+                <br>
+                <p>Sexo</p>
+                <br>
+                <input type="radio" id="femnino" name="genero" value="feminino" required >
+                <label for="feminino">Feminino</label>
+                <br> <br>
+                <input type="radio" id="masculino" name="genero" value="masculino" required >
+                <label for="masculino">Masculino</label>
+                <br> <br>
+                <h2>Tamanho</h2>
+                <br> <br>
+                <input type="radio" id="masculino" name="genero" value="masculino" required >
+                <label for="masculino">P</label>
+                <br>  <br>
+                <input type="radio" id="masculino" name="genero" value="masculino" required >
+                <label for="masculino">M</label>
+                <br>  <br>
+                <input type="radio" id="masculino" name="genero" value="masculino" required >
+                <label for="masculino">G</label>
+                <br>  <br>
+                <input type="radio" id="masculino" name="genero" value="masculino" required >
+                <label for="masculino">GG</label>
+                
+               
+                
                 
             </fieldset>
         </form>
