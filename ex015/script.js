@@ -31,7 +31,7 @@ function verificar(){
                 img.setAttribute('src', 'imagens/idosa.jpg')
             }
         }
-        resultado.style.textAlign = 'center'
+       resultado.style.textAlign = 'center'
         resultado.innerHTML = `detectamos um(a) ${genero} com seus ${idade} anos de idade`
         resultado.appendChild(img)
         
