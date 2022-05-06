@@ -22,7 +22,8 @@ function calcular() {
 
    } else if (operador.value == "divisao") {
       resultado = numerico1 / numerico2;      
-   };
+   }
+   
 
    resu.innerHTML = `a ${operador.value} entre ${numerico1.value} e ${numerico2.value} = ${resultado}`;
    
