@@ -27,4 +27,4 @@ function calcular() {
 
    resu.innerHTML = `a ${operador.value} entre ${numerico1.value} e ${numerico2.value} = ${resultado}`;
    
-}
+} 
